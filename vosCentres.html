@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vos centres</title>
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+
+<body>
+    <div class="header-wpadding">
+        <div class="header">
+            <a href="index.html">
+                <div class="header__logo"><img src="assets/images/logo.png" alt="logo"></div>
+            </a>
+
+            <div class="header__langue">
+
+                <div class="header__langue__flag"><img src="assets/images/France.png" alt="français"></div>
+                <div class="header__langue__flag"><img src="assets/images/Anglais.jpg" alt="anglais"></div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+
+
+        <p class="vos-centre-title">Découvrez en avant-première les maquettes de vos futurs centres, conçus pour vous
+            offrir un cadre moderne et
+            adapté à vos besoins. <br /> Restez connectés pour plus d’informations sur l’ouverture !</p>
+        <div class="container__box">
+            <div class="box box__15">
+                <h3 class="box__title box__title__15">Votre futur centre du 15ème</h3>
+                <div class="box__img box__img__15">
+                    <img src="/assets/images/15-1.jpg" alt="" class="center-photo">
+                    <img src="/assets/images/15-2.jpg" alt="" class="center-photo">
+                    <img src="/assets/images/15-3.jpg" alt="" class="center-photo">
+                    <img src="/assets/images/15-4.jpg" alt="" class="center-photo">
+                    <img src="/assets/images/15-5.jpg" alt="" class="center-photo">
+                </div>
+
+            </div>
+
+
+            <div class="box box__16">
+                <h3 class="box__title box__title__16">Votre futur centre du 16ème</h3>
+                <div class="box__img box__img__16">
+                    <img src="/assets/images/16-1.jpg" alt="" class="center-photo">
+                    <img src="/assets/images/16-1.jpg" alt="" class="center-photo">
+                    <img src="/assets/images/16-1.jpg" alt="" class="center-photo">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".box__img img");
+            const lightbox = document.createElement("div");
+            lightbox.classList.add("lightbox");
+            document.body.appendChild(lightbox);
+
+            const img = document.createElement("img");
+            lightbox.appendChild(img);
+
+            images.forEach(image => {
+                image.addEventListener("click", function () {
+                    img.src = this.src;
+                    lightbox.classList.add("show");
+                });
+            });
+
+            lightbox.addEventListener("click", function () {
+                lightbox.classList.remove("show");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

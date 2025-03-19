@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: center;
+
+
+    &__logo img{
+        width: 150px;
+    }
+
+    &__langue {
+        top: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        position: absolute;
+        right: 1rem;
+
+        &__flag img {
+            width: 30px;
+            height: 20px;
+            box-shadow: 0px 1px 4px 3px rgba(0, 0, 0, 0.094);
+        }
+    }
+
+}
+.header-wpadding{
+    position: relative;
+    margin-bottom: 2rem;
+    background-color: $text-color;
+    height: 100px;
+}

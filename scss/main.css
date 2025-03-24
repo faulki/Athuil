@@ -485,3 +485,39 @@ h2 {
 .mainVideo2{
   margin-top: 40px;
 }
+
+
+@media (max-width: 800px) {
+  .bodyAnthony{
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+
+  .mainVideo{
+    width: 200px;
+  }
+
+  .mainVideo2{
+    width: 200px;
+  }
+
+  .main__top__groupe{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__groupe__button__top{
+    margin: 10px;
+    padding: 15px 50px;
+  }
+
+  .main__bottom__groupe{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__groupe__button__bottom{
+    margin: 10px;
+    padding: 15px 50px;
+  }
+}

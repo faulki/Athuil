@@ -13,3 +13,4 @@ video.addEventListener("click", () => {
         video.classList.add("video-paused"); // Ajoute l'effet de dézoom en transition
     }
 });
+

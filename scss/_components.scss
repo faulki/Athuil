@@ -220,21 +220,37 @@ body {
   border: 2px solid $button-color;
   color: $text-color;
   border-radius: 30px;
-  padding: 15px 100px;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 230px;
+    height: 40px;
+}
+
+.link{
+  align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
 }
 
 .main__groupe__button__top:hover,
-.main__groupe__button__bottom:hover {
+.main__groupe__button__bottom:hover{
   background: $button-color;
   color: $green;
+  a {
+    color: $green;
+  }
 }
 
 /* Dropdown */
 .dropdown {
+  z-index: 100;
   position: absolute;
   top: 100%;
   left: 0;

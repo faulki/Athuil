@@ -13,3 +13,89 @@ a{
 h2{
     color:$text-color 
 }
+
+.zoom-effect {
+    transform: scale(1.6);
+    transition: transform 0.8s ease-in-out;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  .video-paused {
+    transform: scale(1);
+    filter: blur(8px); /* Ajoute un flou de 8px */
+    transition: transform 0.8s ease-in-out, filter 0.8s ease-in-out;
+    z-index: 1;
+  }
+  
+  /* Arrière-plan qui s’assombrit quand la vidéo est jouée */
+  .darken-bg::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  /* Animation de fondu */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
+  .mainVideo2{
+    margin-top: 40px;
+  }
+  
+  
+  @media (max-width: 800px) {
+    .bodyAnthony{
+      margin-bottom: 50px;
+      margin-top: 0;
+    }
+    
+  
+    .mainVideo{
+      width: 200px;
+    }
+  
+    .mainVideo2{
+      width: 200px;
+    }
+  
+    .main__top__groupe{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .main__groupe__button__top{
+      margin: 10px;
+      padding: 15px 50px;
+    }
+  
+    .main__bottom__groupe{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .main__groupe__button__bottom{
+      margin: 10px;
+      padding: 15px 50px;
+    }
+  
+    .main_equipe___assistants{
+      flex-direction: column;
+    }
+    
+    .main_equipe___assistants__box{
+      margin-bottom: 10px;
+    }
+  }

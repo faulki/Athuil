@@ -181,6 +181,7 @@ h2 {
   .main__top__groupe {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .main__groupe__button__top {
     margin: 10px;
@@ -189,6 +190,7 @@ h2 {
   .main__bottom__groupe {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .main__groupe__button__bottom {
     margin: 10px;
@@ -590,6 +592,7 @@ h2 {
   .main__top__groupe {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .main__groupe__button__top {
     margin: 10px;
@@ -598,6 +601,7 @@ h2 {
   .main__bottom__groupe {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .main__groupe__button__bottom {
     margin: 10px;
@@ -882,6 +886,7 @@ h2 {
   .main__top__groupe {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .main__groupe__button__top {
     margin: 10px;
@@ -890,6 +895,7 @@ h2 {
   .main__bottom__groupe {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .main__groupe__button__bottom {
     margin: 10px;

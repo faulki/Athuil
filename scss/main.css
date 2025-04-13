@@ -636,6 +636,11 @@ h2 {
   min-height: 100vh;
   position: relative;
   width: 90%;
+  margin-bottom: 40px;
+}
+
+.video_equipe{
+  margin-bottom: 60px;
 }
 .main_equipe___assistants {
   display: flex;
